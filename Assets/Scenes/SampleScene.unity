@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 80374892}
   - component: {fileID: 80374893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 85578373}
   - component: {fileID: 85578374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 98483636}
   - component: {fileID: 98483637}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 332859370}
   - component: {fileID: 332859372}
   - component: {fileID: 332859371}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501739362}
   - component: {fileID: 501739363}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 758570215}
   - component: {fileID: 758570217}
   - component: {fileID: 758570216}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 826442577}
   - component: {fileID: 826442579}
   - component: {fileID: 826442578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,7 +981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832675382}
   - component: {fileID: 832675383}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1013,7 +1013,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1059,7 +1059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838286050}
   - component: {fileID: 838286051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1091,7 +1091,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 904910234}
   - component: {fileID: 904910236}
   - component: {fileID: 904910235}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1093937738}
   - component: {fileID: 1093937739}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1264,7 +1264,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1311,7 +1311,7 @@ GameObject:
   - component: {fileID: 1199953224}
   - component: {fileID: 1199953226}
   - component: {fileID: 1199953225}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1405,7 +1405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1219170500}
   - component: {fileID: 1219170501}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1437,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1484,7 +1484,7 @@ GameObject:
   - component: {fileID: 1249578070}
   - component: {fileID: 1249578072}
   - component: {fileID: 1249578071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1578,7 +1578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1359550373}
   - component: {fileID: 1359550374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1610,7 +1610,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1656,7 +1656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370956623}
   - component: {fileID: 1370956624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1688,7 +1688,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1735,7 +1735,7 @@ GameObject:
   - component: {fileID: 1427005976}
   - component: {fileID: 1427005978}
   - component: {fileID: 1427005977}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1832,6 +1832,7 @@ GameObject:
   - component: {fileID: 1473192402}
   - component: {fileID: 1473192401}
   - component: {fileID: 1473192403}
+  - component: {fileID: 1473192404}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -2002,6 +2003,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 10
   jumpForce: 10
+  groundCheckPos: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheckRadius: 0.2
+--- !u!95 &1473192404
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473192398}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 84099ba31a5aa5d4aa8563eb6442de6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1501039326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,7 +2041,7 @@ GameObject:
   - component: {fileID: 1501039327}
   - component: {fileID: 1501039329}
   - component: {fileID: 1501039328}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2108,7 +2136,7 @@ GameObject:
   - component: {fileID: 1548742846}
   - component: {fileID: 1548742848}
   - component: {fileID: 1548742847}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2202,7 +2230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1691116762}
   - component: {fileID: 1691116763}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2234,7 +2262,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2280,7 +2308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1818520455}
   - component: {fileID: 1818520456}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2312,7 +2340,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd27a43637577c4478e5e0789c41d1d9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2359,7 +2387,7 @@ GameObject:
   - component: {fileID: 1894983515}
   - component: {fileID: 1894983517}
   - component: {fileID: 1894983516}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2454,7 +2482,7 @@ GameObject:
   - component: {fileID: 1895059687}
   - component: {fileID: 1895059686}
   - component: {fileID: 1895059685}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2577,7 @@ GameObject:
   - component: {fileID: 2047989562}
   - component: {fileID: 2047989564}
   - component: {fileID: 2047989563}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Edge (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
