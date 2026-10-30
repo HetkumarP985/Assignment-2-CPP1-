@@ -1,36 +1,41 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(BoxCollider2D))]
+[RequireComponent(typeof(Animator), typeof(GroundCheck))]
 
 public class PlayerController : MonoBehaviour
 {
     #region Tuneable Parameters
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
+    public int maxJumps = 2;
 
     #endregion
 
-    #region Ground Check Parameters
-    public Transform groundCheckPos;
-    public LayerMask groundLayer;
-    public float groundCheckRadius = 0.2f;
-    private bool isGrounded;
+//#region Ground Check Parameters
+//    public Transform groundCheckPos;
+//    public LayerMask groundLayer;
+//    public float groundCheckRadius = 0.2f;
+//    private bool isGrounded;
 
-    private Vector2 CalculateGroundCheckPos()
-    {
-        Bounds bounds = bc.bounds;
-        return new Vector2(bounds.center.x, bounds.min.y);
-    }
-
-    #endregion
+//    private Vector2 CalculateGroundCheckPos()
+//    {
+//        Bounds bounds = bc.bounds;
+//        return new Vector2(bounds.center.x, bounds.min.y);
+//    }
+    
+//    #endregion
 
     #region Components References
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private BoxCollider2D bc;
     private Animator anim;
+    private GroundCheck gndChk;
+    #endregion
 
+    #region Properties
+    private int currentJumps = 0;
     #endregion
 
 
@@ -42,6 +47,9 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         bc = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        gndChk = GetComponent<GroundCheck>();
+
+        gndChk.Init(bc, rb);
 
         rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
     }
@@ -49,33 +57,46 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rb.linearVelocityY <= 0f)
-        {
-            isGrounded = Physics2D.OverlapCircle(CalculateGroundCheckPos(), groundCheckRadius, groundLayer);
-        }
+        gndChk.CheckGround();
 
-
+        //collect inputs for current frame
+        //bool upPressed = Input.GetAxisRaw("Vertical") > 0f;
         float moveX = Input.GetAxisRaw("Horizontal");
-        bool jumpPressed = Input.GetButtonDown("Jump");
+        bool jumpPresssed = Input.GetButtonDown("Jump");
+        bool fireInput = Input.GetButtonDown("Fire1");
 
+
+        //apply mechanics based on inputs
         rb.linearVelocityX = moveX * moveSpeed;
 
-        if (jumpPressed && isGrounded)
+        if (jumpPresssed && currentJumps < maxJumps)
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            isGrounded = false;
-
-        }
-        if (moveX != 0f)
-        { 
-            SpriteFlip(moveX);
+            currentJumps++;
+            gndChk.SetGroundAfterJump();
+            rb.linearVelocityY = 0f;
+            rb.AddForceY(jumpForce, ForceMode2D.Impulse);
         }
 
-        anim.SetBool("isGrounded", isGrounded);
+
+
+        if (moveX != 0f) SpriteFlip(moveX);
+        if (gndChk.isGrounded) currentJumps = 0;
+
+        // Update animator parameters
+        anim.SetBool("isGrounded", gndChk.isGrounded);
         anim.SetFloat("moveX", Mathf.Abs(moveX));
-
+        if (fireInput)
+        {
+            anim.SetTrigger("attack");
+        }
     }
 
     void SpriteFlip(float moveX) => sr.flipX = (moveX < 0f);
+    //{
+    //    if (sr.flipX && moveX > 0f || !sr.flipX && moveX< 0f)
+    //    {
+    //        sr.flipX = !sr.flipX;
+    //    }
+    //}
 
 }
