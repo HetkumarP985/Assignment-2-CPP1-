@@ -2006,7 +2006,7 @@ MonoBehaviour:
   groundCheckPos: {fileID: 0}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   groundCheckRadius: 0.2
 --- !u!95 &1473192404
 Animator:

@@ -72,11 +72,11 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            anim.SetTrigger("IsAttack");
+            anim.SetTrigger("attack1");
         }
         if (Input.GetMouseButtonDown(1) && Input.GetKey(KeyCode.LeftShift))
         {
-            anim.SetTrigger("IsjumpAttack");
+            anim.SetTrigger("attack2");
         }
 
         anim.SetBool("isGrounded", isGrounded);
